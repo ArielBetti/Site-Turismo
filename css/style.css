@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+body{
+	background: linear-gradient(-10deg,#0a0a0a,#0a0a0a,#050505)!important;
+}
+
+.triside{
+	display: grid;
+	grid-template: 
+	"janela1 janela2 janela3"
+	;
+	grid-gap: 5px;
+	grid-template-rows: 50vh auto auto;
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 50px;
+}
+
+.janela1{
+	grid-area: janela1;
+	margin-top: 20px;
+	background-image: url('https://images.wallpaperscraft.com/image/tokyo_bridge_night_buildings_skyscrapers_59573_800x600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+}
+
+.janela2{
+	grid-area: janela2;
+	margin-bottom: 10px;
+	background-image: url('https://images.wallpaperscraft.com/image/tokyo_bridge_night_buildings_skyscrapers_59573_800x600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.janela3{
+	grid-area: janela3;
+	margin-top: 20px;
+	background-image: url('https://images.wallpaperscraft.com/image/tokyo_bridge_night_buildings_skyscrapers_59573_800x600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.subtexto{
+	font-family: 'Quicksand';
+}
+
+.subtexto a{
+	color: white;
+}
+
+.btn-turismo{
+	border: solid 1px white !important;
+	border-radius: 5px;
+	color: white !important;
+}
+
+.btn-turismo:hover{
+	background: #00a0c4;
+}
+
+.btn-turismo1{
+	border: solid 1px black !important;
+	border-radius: 5px;
+	color: black !important;
+}
+
+.btn-turismo2{
+	border: solid 1px white !important;
+	border-radius: 5px;
+	color: white !important;
+}
+
+@media(max-width: 990px){
+	.triside{
+	margin-left: 37%;
+	margin-right: 37%;
+	}
+}
+@media(max-width: 768px){
+	.triside{
+	margin-left: 33%;
+	margin-right: 33%;
+	}
+}
+@media(max-width: 468px){
+	.triside{
+	margin-left: 30%;
+	margin-right: 30%;
+	}
+}
+@media(max-width: 400px){
+	.triside{
+	margin-left: 28%;
+	margin-right: 28%;
+	}
+}
+@media(max-width: 350px){
+	.triside{
+	margin-left: 23%;
+	margin-right: 23%;
+	}
+}
+
+.grade1{
+	background-image: url('https://images.wallpaperscraft.com/image/mountains_night_sky_road_bends_darkness_63269_1366x768.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 300px;
+}
+
+.grade2{
+	background-image: url('https://images.wallpaperscraft.com/image/city_paris_eiffel_tower_bokeh_focus_blur_58862_1366x768.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	height: 300px;
+}
+
+.footergl{
+	display: grid;
+	grid-template: 
+	"logos direitos social"
+	;	
+	padding-top: 10px;
+}
+
+@media(max-width:510px){
+	.footergl{
+		grid-template: 
+		"direitos"
+		"social"
+		"logos"
+		;
+	}
+	.logos{
+		text-align: center;
+	}
+	.direitos{
+		text-align: center;
+	}
+	.social{
+		text-align: center;
+	}
+}
+
+.logos{
+	grid-area: logos;
+	text-decoration: none;
+}
+
+.logos a{
+	text-decoration: none;
+	color: white;
+}
+
+.direitos{
+	grid-area: direitos;
+	text-align: center;
+}
+
+.social{
+	grid-area: social;
+}
+
+.locais{
+	display: grid;
+	grid-template: 
+	"paris ny tokyo"
+	;
+	grid-gap: 5px;
+}
+
+.paris{
+	grid-area: paris;
+	background-image: url('https://images.wallpaperscraft.com/image/paris_france_trees_landscape_62384_800x600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 300px;
+}
+
+.ny{
+	grid-area: ny;
+	background-image: url('https://images.wallpaperscraft.com/image/new_york_usa_skyscrapers_beach_117549_800x600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 300px;
+}
+
+.tokyo{
+	grid-area: tokyo;
+	background-image: url('https://images.wallpaperscraft.com/image/tokyo_bridge_night_buildings_skyscrapers_59573_800x600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	background-size: cover;
+	height: 300px;
+}
+
+@media(max-width: 510px){
+	.locais{
+		grid-template: 
+		"paris"
+		"ny"
+		"tokyo"
+		;
+	}
+}
+
+/*Social midia buttons */
+.wp{
+	border: 1px solid white;
+    list-style: none;   
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 15px;
+    transition: .5s;
+    border-radius: 5%;   
+}
+
+.gh{
+	border: 1px solid white;
+    list-style: none;   
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 15px;
+    transition: .5s;
+    border-radius: 5%;   
+}
+
+.fb{
+	border: 1px solid white;
+    list-style: none;   
+    font-size: 20px;
+    color: #fff;
+    padding: 15px 15px;
+    transition: .5s;
+    border-radius: 5%;   
+}
+
+.fb:hover{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 1px 6px #0f7dfc;
+    background-color: #0f7dfc;
+    transition: 0.70s;
+}
+
+.gh:hover{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 1px 6px #7405fc;
+    transition: 0.70s;
+    background: linear-gradient(20deg,#9d05fc,#7405fc,#ebfc05); /*Change colors as you want*/
+    background-size: 1000% 1000% !important;
+}
+
+.wp:hover{
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0px 1px 6px #04f731;
+    transition: 0.70s;
+    background: linear-gradient(20deg,#15f709,#04f731,#04f78e); /*Change colors as you want*/
+    background-size: 1000% 1000% !important;
+}
